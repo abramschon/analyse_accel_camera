@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: jupyter-nb-clear-output
+        name: jupyter-nb-clear-output
+        files: \.ipynb$
+        stages: [commit]
+        language: system
+        entry: jupyter nbconvert --clear-output --inplace
+  - repo: https://github.com/psf/black
+    rev: 23.11.0
+    hooks:
+      - id: black-jupyter
+        language_version: python3.10
