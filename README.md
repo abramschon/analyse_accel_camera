@@ -1,8 +1,6 @@
+# Accelerometer and camera analysis 
 
-# Accelerometer and camera analysis 
-
-
-## Actipy installation
+## Actipy installation
 
 Set up a virtual environment with python 3.10 (tested).
 
